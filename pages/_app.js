@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
+import { ApolloProvider } from '@apollo/client';
+import clientApollo from '../config/apollo';
+import OrderState from '../context/ordes/Orderstate';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <ApolloProvider client={clientApollo}>
+      <OrderState>
+        <Component {...pageProps} />
+      </OrderState>
+    </ApolloProvider>
+  )
 }
 
-export default MyApp
+export default MyApp;
+
