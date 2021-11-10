@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Select from 'react-select';
 import { gql, useQuery } from '@apollo/client';
-import OrderContext from '../../context/ordes/OrderContext';
+import OrderContext from '../../context/orders/OrderContext';
 
 const GET_PRODUCTS = gql `
   query Query {

@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
-import OrderContext from '../../context/ordes/OrderContext';
+import OrderContext from '../../context/orders/OrderContext';
 
 const ProductSummary = ({product}) => {
 

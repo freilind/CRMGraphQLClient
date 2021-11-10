@@ -1,7 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { ApolloProvider } from '@apollo/client';
 import clientApollo from '../config/apollo';
-import OrderState from '../context/ordes/Orderstate';
+import OrderState from '../context/orders/OrderState';
 
 const MyApp = ({ Component, pageProps }) => {
   return (

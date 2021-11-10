@@ -2,7 +2,6 @@ import React, { useReducer } from 'react';
 import OrderContext from "./OrderContext";
 import OrderReducer from './OrderReducer';
 import  * as TYPE from '../../types';
-import { ProvidedRequiredArgumentsOnDirectivesRule } from 'graphql/validation/rules/ProvidedRequiredArgumentsRule';
 
 const OrderState = ({children}) => {
 
