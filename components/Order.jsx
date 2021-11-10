@@ -54,21 +54,20 @@ const Order = ({order}) => {
 
     useEffect(() => {
         if(statusOrder) {
-            setStatusOrder(statusOrder)
+            setStatusOrder(statusOrder);
+        }
+        // Function modify class
+        const classOrder = () => {
+            if(statusOrder === 'PENDING') {
+                setClassStyle('border-yellow-500')
+            } else if (statusOrder === 'DONE') {
+                setClassStyle('border-green-500')
+            } else {
+                setClassStyle('border-red-800')
+            }
         }
         classOrder();
     }, [ statusOrder ]);
-
-    // Función que modifica el color del pedido de acuerdo a su estado
-    const classOrder = () => {
-        if(statusOrder === 'PENDING') {
-            setClassStyle('border-yellow-500')
-        } else if (statusOrder === 'DONE') {
-            setClassStyle('border-green-500')
-        } else {
-            setClassStyle('border-red-800')
-        }
-    }
 
     const changeStatusOrder = async newStatus => {
         try {

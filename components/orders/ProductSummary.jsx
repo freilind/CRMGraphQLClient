@@ -12,6 +12,7 @@ const ProductSummary = ({product}) => {
     useEffect(() => {
         updateQuantity();
         updateTotal();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [quantity])
 
     const updateQuantity = () => {

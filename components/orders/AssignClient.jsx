@@ -28,6 +28,7 @@ const AssignClient = () => {
 
     useEffect(() => {
         addClient(client);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [client])
 
     const selectClient= client => {

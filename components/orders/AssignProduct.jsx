@@ -28,6 +28,7 @@ const AssignProduct= () => {
     useEffect(() => {
       addProduct(products);
       updateTotal();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [products]);
 
     const selectProduct = product => {
