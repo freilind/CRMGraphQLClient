@@ -7,7 +7,7 @@ import AssignClient from '../components/orders/AssignClient';
 import AssignProduct from '../components/orders/AssignProduct';
 import OrderSummary from '../components/orders/OrderSummary';
 import Total from '../components/orders/Total';
-import OrderContext from '../context/ordes/OrderContext';
+import OrderContext from '../context/orders/OrderContext';
 
 const NEW_ORDER = gql `
     mutation Mutation($input: OrderInput) {
